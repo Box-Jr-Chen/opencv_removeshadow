@@ -1,0 +1,4 @@
+C:\ProgramData\Anaconda3\Scripts\activate.bat tf_base
+
+
+jupyter notebook
