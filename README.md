@@ -10,4 +10,4 @@
 <img src="test.jpg" width="250" title="hover text">
 
 ## 原先結果
-<img src="computer.jpg" width="350" title="hover text">
+<img src="./img/result_01.jpg" width="350" title="hover text">
