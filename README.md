@@ -38,3 +38,32 @@
 
 
 <img src="./img/removeshadow_02.jpg" width="250" title="hover text">
+
+
+- 填滿顏色
+
+      # Copy the thresholded image
+      im_floodfill = thrash.copy()
+
+      # Mask used to flood filling.
+      # NOTE: the size needs to be 2 pixels bigger on each side than the input image
+      h, w = thrash.shape[:2]
+      mask = np.zeros((h+2, w+2), np.uint8)
+
+      # Floodfill from point (0, 0)
+      cv2.floodFill(im_floodfill, mask, (0,0), 255)
+
+      # Invert floodfilled image
+      im_floodfill_inv = cv2.bitwise_not(im_floodfill)
+
+      # Combine the two images to get the foreground
+      im_out = thrash | im_floodfill_inv
+
+<img src="./img/removeshadow_03.jpg" width="250" title="hover text">
+
+## 重新判斷結果
+
+當把影子先處理掉後並填滿顏色，再判斷圓形形狀的時候，判斷準確度提高不少，
+可將影子遮蔽的圖案順利做偵測判斷。
+
+<img src="./img/removeshadow_04.jpg" width="250" title="hover text">
