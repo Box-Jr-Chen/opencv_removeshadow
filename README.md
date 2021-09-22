@@ -12,7 +12,7 @@
 <img src="test.jpg" width="200" title="hover text">
 
 ## 原先結果
-<img src="./img/result_01.jpg" width="250" title="hover text">
+<img src="./img/result_01.jpg" width="450" title="hover text">
 
 
 ## 處裡方式
