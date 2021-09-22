@@ -4,13 +4,13 @@
 所以必須先處理影子問題，才能提高判斷準確度
 
 - 電腦圖片
-<img src="computer.jpg" width="250" title="hover text">
+<img src="computer.jpg" width="150" title="hover text">
 
 - 現實情況
-<img src="test.jpg" width="250" title="hover text">
+<img src="test.jpg" width="150" title="hover text">
 
 ## 原先結果
-<img src="./img/result_01.jpg" width="350" title="hover text">
+<img src="./img/result_01.jpg" width="150" title="hover text">
 
 
 ## 處裡方式
@@ -37,7 +37,7 @@
       img_gray = 255 - img_gray
 
 
-<img src="./img/removeshadow_02.jpg" width="250" title="hover text">
+<img src="./img/removeshadow_02.jpg" width="150" title="hover text">
 
 
 - 填滿顏色
@@ -59,11 +59,11 @@
       # Combine the two images to get the foreground
       im_out = thrash | im_floodfill_inv
 
-<img src="./img/removeshadow_03.jpg" width="250" title="hover text">
+<img src="./img/removeshadow_03.jpg" width="150" title="hover text">
 
 ## 重新判斷結果
 
 當把影子先處理掉後並填滿顏色，再判斷圓形形狀的時候，判斷準確度提高不少，
 可將影子遮蔽的圖案順利做偵測判斷。
 
-<img src="./img/removeshadow_04.jpg" width="250" title="hover text">
+<img src="./img/removeshadow_04.jpg" width="150" title="hover text">
